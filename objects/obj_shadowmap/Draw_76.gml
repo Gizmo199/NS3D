@@ -1,3 +1,4 @@
+// Verify surfaces
 if ( !surface_exists(shadow_surface) ) shadow_surface = surface_create(room_width, room_height);
 var temp = surface_create(room_width, room_height);
 

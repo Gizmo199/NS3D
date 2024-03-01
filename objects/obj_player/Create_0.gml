@@ -1,18 +1,20 @@
-var this = self;
+// Allow shadow casting
 shadow_cast_enable(function(){
-	draw_sprite_ext(sprite, index, x, y-z, xscale, yscale, 0, color, alpha);	
+	draw_sprite(sprite, index, x, y-z);	
 });
-z = 0;
-zsp = 0;
-cyo = 1;
 
+// 3D variables
+z		= 0;
+zsp		= 0;
+cyo		= 1;
+ground	= 0;
+
+// Animation stuff
 sprite	= sp_player;
 index	= 0;
-xscale	= 1;
-yscale	= 1;
 angle	= 0;
-color	= c_white;
-alpha	= 1;
 angleto = 0;
-camera  = instance_create_depth(0, 0, 0, obj_camera, { target : this });
+
+// Other objects we control
+camera  = instance_create_depth(0, 0, 0, obj_camera, { target : other });
 light   = light_create(x, y, 8, 128, .5);

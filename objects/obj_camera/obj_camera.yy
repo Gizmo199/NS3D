@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Player.yy",
+    "name": "Camera",
+    "path": "folders/Systems/Camera.yy",
   },
   "parentObjectId": null,
   "persistent": false,

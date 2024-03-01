@@ -1,5 +1,4 @@
 function shadow_draw(){
-	if ( !instance_exists(obj_shadowmap) ) return;
 	
 	with ( obj_shadowmap ) {
 		gpu_set_texfilter(true);

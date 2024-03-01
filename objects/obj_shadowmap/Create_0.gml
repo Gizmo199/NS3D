@@ -1,3 +1,4 @@
+// Set up variables
 shadow_surface		= -1;
 shadow_emitter		= [];
 shadow_intensity	= .3;
